@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formulario simple</title>
+  <link rel="stylesheet" href="Formularios.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Formulario de contacto</h2>
+    <form action="#" method="post">
+
+      <label for="nombre">Nombre</label>
+      <input id="nombre" name="nombre" type="text" required>
+
+      <label for="email">Correo electrónico</label>
+      <input id="email" name="email" type="email" required>
+
+      <label for="url">URL</label>
+      <input id="url" name="url" type="url" placeholder="https://">
+
+      <label for="fecha">Fecha</label>
+      <input id="fecha" name="fecha" type="date">
+
+      <label for="fechaHora">Fecha y hora (UTC)</label>
+      <input id="fechaHora" name="fechaHora" type="datetime-local">
+
+      <label for="numero">Número (min -10, max 10)</label>
+      <input id="numero" name="numero" type="number" min="-10" max="10" value="0">
+
+      <label for="telefono">Teléfono</label>
+      <input id="telefono" name="telefono" type="tel">
+
+      <label for="busqueda">Término de búsqueda</label>
+      <input id="busqueda" name="busqueda" type="search">
+
+      <label for="color">Color favorito</label>
+      <input id="color" name="color" type="color">
+
+      <fieldset>
+        <legend>Suscripción</legend>
+        <label><input type="radio" name="suscripcion" value="promo"> Suscribirme a la newsletter y promociones</label>
+        <label><input type="radio" name="suscripcion" value="solo-news"> Suscribirme solo a la newsletter</label>
+        <label><input type="radio" name="suscripcion" value="no" checked> No deseo suscribirme</label>
+      </fieldset>
+
+      <label><input type="checkbox" name="confirmacion"> Envíame un email de confirmación</label>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+</body>
+</html>

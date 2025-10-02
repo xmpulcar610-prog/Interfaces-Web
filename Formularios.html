@@ -10,68 +10,87 @@
   
   <header>
     <div class="logo">
-      <h1> Nombre de la hamburgueseria</h1>
+      <h1>Nombre de la hamburguesería</h1>
     </div>
-    <nav>
+    <nav aria-label="Menú principal">
       <ul>
         <li><a href="#">Inicio</a></li>
-        <li><a href="#">Menu</a></li>
+        <li><a href="#">Menú</a></li>
         <li><a href="#">Contacto</a></li>
       </ul>
     </nav>
   </header>
 
-    <section>
+  <main>
+    <section class="layout">
       <article>
         <div class="container">
-          <h2>Reserva de Meesa</h2>
+          <h2>Reserva de Mesa</h2>
 
-            <label for="nombre">Nombre</label>
-            <input id="nombre" name="nombre" type="text" placeholder="Escribe tu nombre" required>
+          <form action="#" method="post" novalidate>
+            <div class="field">
+              <label for="nombre">Nombre</label>
+              <input id="nombre" name="nombre" type="text" placeholder="Escribe tu nombre" required>
+            </div>
 
-            <label for="email">Correo electrónico</label>
-            <input id="email" name="email" type="email" placeholder="tucorreo@ejemplo.com" required>
+            <div class="field">
+              <label for="email">Correo electrónico</label>
+              <input id="email" name="email" type="email" placeholder="tucorreo@ejemplo.com" required>
+            </div>
 
-            <label for="telefono">Teléfono</label>
-            <input id="telefono" name="telefono" type="tel" placeholder="+34 600 000 000" required>
+            <div class="field">
+              <label for="telefono">Teléfono</label>
+              <input id="telefono" name="telefono" type="tel" placeholder="+34 600 000 000" required>
+            </div>
 
-            <label for="fecha">Fecha de la reserva</label>
-            <input id="fecha" name="fecha" type="date" required>
+            <div class="grid-2">
+              <div class="field">
+                <label for="fecha">Fecha de la reserva</label>
+                <input id="fecha" name="fecha" type="date" required>
+              </div>
 
-            <label for="hora">Hora</label>
-            <input id="hora" name="hora" type="time" required>
+              <div class="field">
+                <label for="hora">Hora</label>
+                <input id="hora" name="hora" type="time" required>
+              </div>
+            </div>
 
-            <label for="personas">Numero de personas</label>
-            <input id="personas" name="personas" type="number" required>
+            <div class="field">
+              <label for="personas">Número de personas</label>
+              <input id="personas" name="personas" type="number" min="1" max="30"  required>
+            </div>
 
-            <fieldset>
+            <fieldset class="fieldset">
               <legend>Preferencias Especiales</legend>
-                  <label for="zona">Zona preferida:</label>
-                    <select id="zona" name="zona">
-                      <option value="interior">Interior</option>
-                      <option value="terraza">Terraza</option>
-                    </select>
+              <div class="field">
+                <label for="zona">Zona preferida</label>
+                <select id="zona" name="zona" aria-label="Elegir zona">
+                  <option value="interior">Interior</option>
+                  <option value="terraza">Terraza</option>
+                </select>
+              </div>
             </fieldset>
 
-            <label><input type="checkbox" name="confirmacion"> Quiero recibir un email de confirmación</label>
-
-            <button type="submit">Enviar</button>
+            <div class="actions">
+              <button type="submit">Reservar</button>
+              <button type="reset" class="secondary">Limpiar</button>
+            </div>
           </form>
         </div>
       </article>
 
-      <aside>
-        <h3>Información adicional</h3>
-        <p>Puedes escribirnos para resolver dudas, solicitar información o proponer una colaboración. Estaremos encantados de atenderte.</p>
-        <ul>
-          <li>Email: contacto@miweb.com</li>
-          <li>Teléfono: +34 600 000 000</li>
-          <li>Horario: Lunes a Viernes de 9:00 a 18:00</li>
-        </ul>
-      </aside>
     </section>
+  </main>
 
   <footer>
+    <h3>Información adicional</h3>
+        <p>Puedes escribirnos para resolver dudas, solicitar información o proponer una colaboración. Estaremos encantados de atenderte.</p>
+        <ul>
+          <li><strong>Email:</strong> miguelpulidocarmona12@gmail.com.com</li>
+          <li><strong>Teléfono:</strong> +34 697387397</li>
+          <li><strong>Horario:</strong> Lunes a Viernes de 9:00 a 18:00</li>
+        </ul>
+        <br>
     <p>&copy; 2025 Mi Web - Todos los derechos reservados</p>
   </footer>
 

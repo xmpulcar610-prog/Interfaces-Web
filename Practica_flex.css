@@ -1,0 +1,42 @@
+header{
+    background-color: black;
+    color:white;
+    display: flex;
+}
+#header{
+    flex: 1;                    
+    text-align: center;         
+    padding: 15px;
+}
+
+nav{
+    background-color: red;
+    color:white;
+    flex: 3;                    
+    text-align: center;         
+    padding: 15px;
+}
+
+#hero{
+    background-color: blue;
+    color:white;
+    text-align: center;
+    padding: 120px;
+}
+
+main{
+    background-color: darkslategrey;
+    color:white;
+}
+
+#image{
+    background-color: grey;
+}
+
+#extra{
+    background-color: aqua;
+}
+
+#banner{
+    background-color: yellow;
+}

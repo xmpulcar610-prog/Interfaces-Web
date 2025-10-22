@@ -1,15 +1,24 @@
-header{
+*
+{
+    text-align: center;
+    font-size: 20px;
+}
+
+header
+{
     background-color: black;
     color:white;
     display: flex;
 }
-#header{
+#header
+{
     flex: 1;                    
     text-align: center;         
     padding: 15px;
 }
 
-nav{
+nav
+{
     background-color: red;
     color:white;
     flex: 3;                    
@@ -17,26 +26,112 @@ nav{
     padding: 15px;
 }
 
-#hero{
+#hero
+{
     background-color: blue;
     color:white;
     text-align: center;
     padding: 120px;
 }
 
-main{
+#bloque2
+{
+    display: flex;
+}
+
+main
+{
     background-color: darkslategrey;
+    color:white;
+    padding: 80px;
+    flex: 2;   
+}
+
+#flex_columna
+{
+    flex-direction: column;
+    flex: 1
+}
+
+#image
+{
+    background-color: grey;
+    flex: 1;
+    padding: 40px;
+}
+
+#extra
+{
+    background-color: aqua;
+    flex: 1; 
+    padding: 40px;
+}
+
+#banner
+{
+    background-color: yellow;
+    padding: 30px;
+}
+
+/* --------------------------------------------------------------------------- */
+
+@media (max-width: 400px) 
+{
+    *
+{
+    text-align: center;
+    font-size: 20px;
+}
+
+header
+{
+    background-color: black;
+    color:white;
+    flex-direction: column;
+}
+
+#header
+{                  
+    text-align: center;         
+}
+
+nav
+{
+    background-color: red;
     color:white;
 }
 
-#image{
+#hero
+{
+    background-color: blue;
+    color:white;
+    padding: 60px;
+}
+
+#bloque2
+{
+    flex-direction: column;
+}
+
+main
+{
+    background-color: darkslategrey;
+    color:white;
+    padding: 50px;
+}       
+
+#image
+{
     background-color: grey;
 }
 
-#extra{
+#extra
+{
     background-color: aqua;
-}
+}   
 
-#banner{
+#banner
+{
     background-color: yellow;
+}
 }

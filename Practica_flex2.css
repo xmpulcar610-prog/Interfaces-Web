@@ -1,0 +1,73 @@
+body{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    margin: 0; 
+}
+#nav_imag{
+    background-color: red;
+    color: red;
+    flex: 10%
+}
+
+#img_principal{
+    background-color: green;
+    color: green;
+    flex: 45%;
+}   
+
+#contenido{
+    flex: 45%;
+    background-color: chartreuse;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#titulo{
+    background-color: blue;
+    color: blue; 
+    margin: 3px;
+    flex: 1 0 30%;
+}
+
+#descripción{
+    background-color: cadetblue;
+    color: cadetblue;
+    margin: 3px;
+    flex: 1 0 30%;
+}
+
+#tarjetas_recomend{
+    background-color: cyan;
+    display: flex;
+    margin: 3px;
+    flex: 1 0 30%;
+}
+
+#tarjeta1,  #tarjeta3{
+    background-color: black;
+    flex: 15%;
+    margin: 3px;
+}
+
+#tarjeta2, #tarjeta4{
+    background-color: gray;
+    flex: 15%;
+    margin: 3px;
+    color: gray;
+}
+
+#imag1, #imag3{
+    background-color: palevioletred;
+    flex: 15%;
+    margin: 3px;
+    color: palevioletred;
+}
+
+#imag2, #imag4{
+    background-color: purple;
+    flex: 15%;
+    margin: 3px;
+    color: purple;
+}

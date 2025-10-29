@@ -1,0 +1,165 @@
+* 
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body 
+{
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#contenedor 
+{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    background-color: white;
+    max-width: 1200px;
+    width: 90%;
+    border-radius: 20px;
+}
+
+
+#twitter, #instagram, #youtube 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid black;
+    padding: 60px 40px;
+    text-align: center;
+    flex: 1 1 300px;
+    margin: 0 15px; 
+}
+
+i 
+{
+    font-size: 70px;
+    margin: 15px;
+}
+
+#logo 
+{
+    font-size: 30px;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+
+#descripción 
+{
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+
+#read_more 
+{
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    padding: 0.8rem 1.5rem; 
+}
+
+#twitter:hover, #instagram:hover, #youtube:hover
+{
+    background-color: rgb(219, 63, 115);
+    border-color: rgb(219, 63, 115);
+    color: white;   
+}
+
+#twitter:hover #read_more 
+{
+    background-color: white;
+    color: rgb(219, 63, 115);
+}
+
+#instagram:hover #read_more 
+{
+    background-color: white;
+    color: rgb(219, 63, 115);
+}
+
+#youtube:hover #read_more 
+{
+    background-color: white;
+    color: rgb(219, 63, 115);
+}
+
+@media (max-width: 768px) 
+{
+  body {
+    align-items: flex-start;      
+  }
+
+  #contenedor {
+    flex-direction: column;              
+    width: 100%;
+    max-width: 100%;
+    padding: 16px;
+    margin: 0, 16px;                    
+  }
+
+  #twitter, #instagram, #youtube {
+    flex: 1 1 auto;
+    width: 100%;
+    padding: 24px 20px;           
+    border-radius: 16px;
+    text-align: center;
+  }
+
+  i {
+    font-size: 44px;
+    margin: 8px 0 16px;
+  }
+
+  #logo {
+    font-size: 22px;
+    margin-bottom: 16px;
+  }
+
+  #descripción {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  #read_more 
+  {
+    font-size: 16px;
+    padding: 10px 16px;
+  }
+
+  #twitter:hover, #instagram:hover, #youtube:hover
+  {
+    background-color: rgb(192, 30, 84);
+    border-color: rgb(192, 30, 84);
+    color: white;   
+  }
+
+  #twitter:hover #read_more 
+{
+    background-color: white;
+    color: rgb(219, 63, 115);
+}
+
+#instagram:hover #read_more 
+{
+    background-color: white;
+    color: rgb(219, 63, 115);
+}
+
+#youtube:hover #read_more 
+{
+    background-color: white;
+    color: rgb(219, 63, 115);
+}
+}

@@ -1,0 +1,129 @@
+header {
+  padding: 10px 20px 0;
+  background-color: red;
+}
+
+h1 {
+  font-size: 40px;
+  width: 20%;
+  margin: 0;
+}       
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: flex;              
+  align-items: center;        
+  justify-content: space-around; 
+  font-size: 23px;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0;
+}
+
+#pelicula_principal {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.fondo_pelicula {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.contenido_pelicula {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  text-align: center;
+  color: white;
+}
+
+#imagen_estrellas {
+  width: 250px;
+  display: block;
+  margin: -30px auto 340px;
+}
+
+#pelicula_principal h2 {
+  margin: 10px 0;
+  font-size: 28px;
+  color: white;
+  text-shadow:
+    -1px -1px 0 black,
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black;
+}
+
+.botones {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.botones button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: red;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  color: white;
+}
+
+.botones button:hover {
+  background-color: red;
+}
+
+#titulo_bloque2{
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+#contenedor 
+{
+   display: flex;
+  justify-content: center;   
+  align-items: flex-start;
+  flex-wrap: nowrap;        
+  gap: 20px;
+  margin: 0;
+  padding: 40px 0;
+  background-color: white;
+  width: 100%;               
+  overflow-x: hidden; 
+}
+
+#contenedor img {
+  width: 200px;         
+  height: 300px;         
+  display: block;
+  margin: 0 auto 10px;  
+}
+
+#pelicula1, #pelicula2, #pelicula3, #pelicula4, #pelicula5
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid black;
+    padding: 30px 20px;
+    text-align: center;
+    flex: 1 1 300px;
+    margin: 0 15px; 
+}
+
+#titulo1,#titulo2,#titulo3,#titulo4,#titulo5
+{
+    font-size: 25px;
+}
+

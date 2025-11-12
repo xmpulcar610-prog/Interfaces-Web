@@ -1,0 +1,79 @@
+header{
+  background: #0b0f1a;
+  padding: 12px 16px;
+}
+
+nav ul{
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1700px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+nav ul h1{
+  margin: 0;
+  margin-right: auto;
+  font-size: 35px;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+nav li{ 
+  margin: 0; 
+}
+
+nav a{
+  color: #e5e7eb;
+  text-decoration: none;
+  padding: 6px 8px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+nav a:hover{
+  color: #f6ff00;
+}
+
+nav button{
+  background: red;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 15px;
+  margin-left: 470px;
+}
+
+nav button:hover{
+  background: rgb(255, 100, 100);
+}
+
+#trailer{
+    text-align: center;
+    margin: 10px;
+    background-image: url(./imagenes/el_mundo_es_suyo_horizontal.jpg);
+}
+
+footer{
+  background: #0b0f1a;        
+  padding: 16px 0;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+footer a{
+  color: #e5e7eb;            
+  text-decoration: none;
+  font-size: 28px;            
+  line-height: 1;
+}
+
+footer a:hover{
+  color: #f6ff00;            
+}

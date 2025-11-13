@@ -137,7 +137,12 @@ nav button:hover{
   margin: 0 auto 10px;  
 }
 
-#pelicula1, #pelicula2, #pelicula3, #pelicula4, #pelicula5
+#contenedor a {
+  text-decoration: none;
+  color: black;
+}
+
+#pelicula1, #pelicula2, #pelicula3, #pelicula4, #pelicula5 
 {
     display: flex;
     flex-direction: column;

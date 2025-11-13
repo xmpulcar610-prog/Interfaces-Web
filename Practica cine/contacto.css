@@ -1,0 +1,223 @@
+header{
+    background: #0b0f1a;
+    padding: 12px 16px;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1700px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+nav ul h1{
+    margin: 0;
+    margin-right: auto;
+    font-size: 35px;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+nav li{ 
+    margin: 0; 
+}
+
+nav a{
+    color: #e5e7eb;
+    text-decoration: none;
+    padding: 6px 8px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+nav a:hover{
+    color: #f6ff00;
+}
+
+nav button{
+    background: red;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 15px;
+    margin-left: 470px;
+}
+
+nav button a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+nav button:hover{
+    background: rgb(255, 100, 100);
+}
+
+footer{
+  background: #0b0f1a;        
+  padding: 16px 0;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+footer a{
+  color: #e5e7eb;            
+  text-decoration: none;
+  font-size: 28px;            
+  line-height: 1;
+}
+
+footer a:hover{
+  color: #f6ff00;            
+}
+
+body{
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: black;
+}
+
+main{
+  max-width: 1100px;
+  margin: 40px auto 60px;
+  padding: 0 16px;
+}
+
+#contacto h2{
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+#contacto p{
+  margin-top: 0;
+  margin-bottom: 24px;
+  color: black
+}
+
+.contenedor-contacto{
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.form-contacto{
+  flex: 2;
+  padding: 24px 24px 28px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+.campo{
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.campo label{
+  font-size: 14px;
+  font-weight: 500;
+  color: black
+}
+
+.campo input,
+.campo textarea{
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #1f2937;
+  color: black
+}
+
+.campo textarea{
+  resize: vertical;
+}
+
+.campo-check{
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin: 12px 0 18px;
+  font-size: 13px;
+  color: black
+}
+
+
+.btn-enviar{
+  width: 100%;
+  background: red;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.btn-enviar:hover{
+  background: rgb(255, 100, 100);
+}
+
+.info-contacto{
+  flex: 1;
+  border-radius: 12px;
+  padding: 20px;
+  border: 1px solid #1f2937;
+}
+
+.info-contacto h3{
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 20px;
+}
+
+.info-contacto p{
+  margin: 8px 0;
+  color: black;
+  font-size: 14px;
+}
+
+.info-contacto i{
+  color: black;
+  margin-right: 8px;
+}
+
+
+#info-extra{
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.tarjeta-info{
+  border-radius: 12px;
+  padding: 18px 16px 20px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+}
+
+.tarjeta-info i{
+  font-size: 28px;
+  color: black;
+  margin-bottom: 8px;
+}
+
+.tarjeta-info h3{
+  margin: 8px 0 6px;
+  font-size: 18px;
+}
+
+.tarjeta-info p{
+  margin: 0;
+  font-size: 14px;
+  color: black;
+}

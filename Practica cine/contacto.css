@@ -61,16 +61,25 @@ nav button:hover{
 
 footer{
   background: #0b0f1a;        
-  padding: 16px 0;
+  padding: 16px 0 20px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: #e5e7eb;
+}
+
+.footer-row{
+  display: flex;
   gap: 24px;
+  align-items: center;
+  justify-content: center;
 }
 
 footer a{
   color: #e5e7eb;            
   text-decoration: none;
-  font-size: 28px;            
+  font-size: 28px; 
   line-height: 1;
 }
 
@@ -78,9 +87,21 @@ footer a:hover{
   color: #f6ff00;            
 }
 
+.footer-contact span{
+  font-size: 18px;          
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.footer-contact i{
+  font-size: 22px;          
+  color: #f6ff00;
+}
+
+
 body{
   margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   color: black;
 }
 
@@ -136,10 +157,6 @@ main{
   color: black
 }
 
-.campo textarea{
-  resize: vertical;
-}
-
 .campo-check{
   display: flex;
   align-items: flex-start;
@@ -193,12 +210,14 @@ main{
 
 #info-extra{
   margin-top: 40px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
 .tarjeta-info{
+  flex: 1 1 220px;
+  max-width: 300px;
   border-radius: 12px;
   padding: 18px 16px 20px;
   text-align: center;

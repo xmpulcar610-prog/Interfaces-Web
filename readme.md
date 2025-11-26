@@ -221,3 +221,49 @@ row | column | dense | row dense | column dense
 ===========================================================
 FIN DE LOS APUNTES COMPLETOS.
 ===========================================================
+.titulo {
+    font-family: 'MiFuente', serif;
+}
+/* Estilos por defecto (modo claro) */
+body {
+  background-color: #ffffff;
+  color: #222222;
+  font-family: system-ui, sans-serif;
+}
+
+/* Si el usuario tiene activado el modo oscuro en su sistema */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #111111;
+    color: #f5f5f5;
+  }
+
+  header {
+    background-color: #1b1b1b;
+  }
+
+  a {
+    color: #9ae6b4;
+  }
+
+  a:hover {
+    color: #c6f6d5;
+  }
+}
+
+
+Porque no me funciona el grid para que se vean con este estilo:
+ "img1 img2 img3 "
+    "img4 img4 img5"; 
+#contenido  
+{
+    display: grid;
+    margin-top: 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "img1 img2 img3 "
+    "img4 img4 img5";   
+    width: 100%;
+    height: 100%;
+}

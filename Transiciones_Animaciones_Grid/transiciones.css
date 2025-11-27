@@ -106,3 +106,15 @@ h1 {
 .card-grid-2:has(.card:nth-child(1):hover) { grid-template-columns: 2fr .5fr .5fr; }
 .card-grid-2:has(.card:nth-child(2):hover) { grid-template-columns: .5fr 2fr .5fr; }
 .card-grid-2:has(.card:nth-child(3):hover) { grid-template-columns: .5fr .5fr 2fr; }
+
+.video
+{
+    margin-top: 40px;
+}
+
+.titulo
+{
+  animation-name: fadeInOut, moveLeft300px, bounce;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+}

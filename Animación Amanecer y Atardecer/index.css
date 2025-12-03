@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+#ej2 {
+    width: 100%;
+    height: 100vh;
+}
+
+#animacion-cielo {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #87CEEB;
+    animation: colores-cielo 60s infinite;
+}
+
+#agua {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 20%;
+    background-color: #00334e;
+    z-index: 10;
+}
+
+#sol,
+#luna,
+[id^="nube"] {
+    position: absolute;
+}
+
+#sol {
+    width: 150px;
+    left: -150px;
+    bottom: 20%;
+    animation: viaje-sol 60s linear infinite;
+}
+
+#luna {
+    width: 150px;
+    left: -150px;
+    bottom: 20%;
+    animation: viaje-luna 60s linear infinite;
+}
+
+[id^="nube"] {
+    opacity: 0;
+    animation-fill-mode: both;
+}
+
+@keyframes mover-nube {
+    0% { left: -200px; opacity: 0; }
+    5% { opacity: 1; }
+    95% { opacity: 1; }
+    100% { left: 110%; opacity: 0; }
+}
+
+#nube1 { top: 10%; width: 330px; animation: mover-nube 30s linear infinite; }
+#nube2 { top: 20%; width: 340px; animation: mover-nube 35s linear infinite; animation-delay: 5s; }
+#nube3 { top: 15%; width: 200px; animation: mover-nube 40s linear infinite; animation-delay: -10s; }
+#nube4 { top: 5%;  width: 260px; animation: mover-nube 32s linear infinite; animation-delay: 15s; }
+
+@keyframes colores-cielo {
+    0% { background-color: #051830; }
+    16% { background-color: #DBFEFE; }
+    24% { background-color: #E88328; }
+    48% { background-color: #051830; }
+    66% { background-color: #00112B; }
+    83% { background-color: #051830; }
+    100% { background-color: #051830; }
+}
+
+@keyframes viaje-sol {
+    0%   { left: -150px; bottom: 20%; opacity: 1; }
+    16%  { left: 50%;  bottom: 80%; opacity: 1; }
+    33%  { left: 100%; bottom: 20%; opacity: 1; }
+    34%  { left: 100%; bottom: 20%; opacity: 0; }
+    100% { left: 100%; bottom: 20%; opacity: 0; }
+}
+
+@keyframes viaje-luna {
+    0%   { left: -150px; bottom: 20%; opacity: 0; }
+    50%  { left: -150px; bottom: 20%; opacity: 0; }
+    51%  { left: -150px; bottom: 20%; opacity: 1; }
+    66%  { left: 50%;   bottom: 80%; opacity: 1; }
+    83%  { left: 100%;  bottom: 20%; opacity: 1; }
+    84%  { left: 100%;  bottom: 20%; opacity: 0; }
+    100% { left: 100%;  bottom: 20%; opacity: 0; }
+}

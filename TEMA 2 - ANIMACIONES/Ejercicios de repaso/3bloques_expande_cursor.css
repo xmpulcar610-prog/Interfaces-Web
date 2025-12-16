@@ -1,0 +1,77 @@
+/* =====================================================
+   RESET BÁSICO
+   - Eliminamos el margen por defecto del navegador
+===================================================== */
+body {
+  margin: 0;
+}
+
+
+/* =====================================================
+   CONTENEDOR PRINCIPAL (#grid)
+   - Ocupa toda la altura del viewport
+   - Se comporta como un CSS Grid
+   - Tiene 3 columnas iguales por defecto
+   - transition permite animar los cambios de layout
+===================================================== */
+#grid {
+  height: 100vh;
+
+  display: grid;
+
+  /* Tres columnas iguales inicialmente */
+  grid-template-columns: 1fr 1fr 1fr;
+
+  /* Separación entre columnas */
+  gap: 3px;
+
+  /* Color visible entre columnas */
+  background: crimson;
+
+  /* Anima cualquier cambio del grid (columnas) */
+  transition: 500ms;
+}
+
+
+/* =====================================================
+   COLUMNAS (.left, .center, .right)
+   - :where() agrupa selectores sin aumentar especificidad
+   - Todas las columnas comparten estilo
+===================================================== */
+:where(.left, .center, .right) {
+  background: navajowhite;
+
+  /* Transición para el cambio de color */
+  transition: 300ms;
+}
+
+
+/* =====================================================
+   HOVER SOBRE CUALQUIER COLUMNA
+   - Cambia el color de fondo
+===================================================== */
+:where(.left, .center, .right):hover {
+  background: crimson;
+}
+
+
+/* =====================================================
+   EFECTOS DE HOVER SOBRE EL GRID CON :has()
+   - Cuando una columna tiene hover:
+     esa columna crece y las otras se reducen
+===================================================== */
+
+/* Hover en columna izquierda */
+#grid:has(.left:hover) {
+  grid-template-columns: 2fr 0.5fr 0.5fr;
+}
+
+/* Hover en columna central */
+#grid:has(.center:hover) {
+  grid-template-columns: 0.5fr 2fr 0.5fr;
+}
+
+/* Hover en columna derecha */
+#grid:has(.right:hover) {
+  grid-template-columns: 0.5fr 0.5fr 2fr;
+}

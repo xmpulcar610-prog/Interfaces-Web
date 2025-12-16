@@ -1,0 +1,45 @@
+
+body {
+  margin: 0;
+}
+
+#grid {
+  height: 100vh;
+}
+
+#left {
+  background: crimson;
+}
+
+#right {
+  background: navajowhite;
+}
+
+
+/* =====================================================
+   CONFIGURACIÓN DEL GRID + TRANSICIÓN
+   - CSS Grid con dos columnas
+   - La primera columna usa una variable CSS
+   - Si la variable no existe → 48px por defecto
+   - transition permite animar el cambio de layout
+===================================================== */
+#grid {
+  display: grid;
+
+  /* Columna izquierda variable / columna derecha automática */
+  grid-template-columns: var(--left, 48px) auto;
+
+  /* Anima cualquier cambio del grid */
+  transition: 300ms;
+}
+
+
+/* =====================================================
+   EFECTO HOVER CON :has()
+   - Cuando el elemento #left tiene hover
+   - Se cambia el valor de la variable CSS
+   - El grid se recalcula y se anima automáticamente
+===================================================== */
+#grid:has(#left:hover) {
+  --left: 30%;
+}
